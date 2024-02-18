@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,11 +10,140 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   <style>
-
+    .primary_color{
+      color: #1DD100;
+    }
+    .primary_bg{
+      background-color: #1DD100;
+    }
+    .secondary_bg{
+      background-color: #1DD10026;
+    }
   </style>
 </head>
-<body>
+<body class="font-[raleway]">
+
+  <!-- === HEADER === -->
+  <header>
+    <div class="container max-w-[1300px] mx-auto">
+      <!-- Navbar -->
+      <div class="navbar bg-base-100 p-0 my-3">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+              </svg>
+            </div>
+            <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+              <li><a>Home</a></li>
+              <li><a>About</a></li>
+              <li><a>Destination</a></li>
+              <li><a>Search</a></li>
+            </ul>
+          </div>
+          <a href="" class="text-3xl font-bold">P-Ticket</a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
+            <li><a>Home</a></li>
+            <li><a>About</a></li>
+            <li><a>Destination</a></li>
+            <li><a>Search</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end">
+          <button class="btn secondary_bg primary_color border-[#1DD100] hover:bg-[#1DD1003d] hover:border-[#1DD100]">Bus
+              <img src="images/tabler-icon-bus.svg" alt=""></button>
+        </div>
+      </div>
+
+      <!-- Banner -->
+      <div class="">
+        <div class="hero min-h-[700px] bg-[url('images/banner.png')] bg-no-repeat rounded-[32px]">
+          <div class="hero-content text-center text-neutral-content">
+            <div class="">
+              <h1 class="mb-5 text-[64px] font-bold leading-normal">End-to-End Travel with <br><span class="primary_color">P Paribahan</span></h1>
+              <p class="mb-5 max-w-[600px]">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi.
+                In deleniti eaque aut repudiandae et a id nisi.</p>
+              <button class="btn btn-primary primary_bg text-lg border-none hover:bg-[#1DD100e6]"><a href="#buy_ticket">Buy Tickets</a></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
   
+  
+  <!-- === MAIN === -->
+  <main class="my-14">
+    <div class="container max-w-[1300px] mx-auto">
+      <!-- Best offers for you -->
+      <div class="">
+        <h2 class="text-4xl font-bold text-center">Best offers for you</h2>
+
+
+        <div class="flex justify-between gap-12 mt-10">
+          <!-- 15% off -->
+          <div class="flex justify-between bg-[#FFBF0F] p-12 rounded-3xl w-full items-center">
+            <div class="flex flex-col font-[inter]">
+              <h2 class="text-4xl font-black text-[#030712cc]">15% OFF</h2>
+              <p class="font-semibold text-[#030712cc]">on your next purchase</p>
+              <p class="text-[#03071280]">use by January 2024</p>
+            </div>
+            <div class="divider divider-horizontal "></div>
+            <div class="flex flex-col">
+              <h3 class="text-3xl font-bold text-[#030712]">NEW15</h3>
+              <p class="text-[#03071266] font-medium">Coupon Code</p>
+            </div>
+            <div class="absolute">
+              <div class="absolute bg-white w-[50px] h-[50px] rounded-full translate-x-[550%] bottom-[70px]"></div>
+              <div class="absolute bg-white w-[50px] h-[50px] rounded-full translate-x-[550%] top-[70px]"></div>
+            </div>
+          </div>
+
+          <!-- 20% off -->
+          <div class="flex justify-between bg-[#F78C9C] p-12 rounded-3xl w-full items-center">
+            <div class="flex flex-col font-[inter]">
+              <h2 class="text-4xl font-black text-[#030712cc]">20% OFF</h2>
+              <p class="font-semibold text-[#030712cc]">on your next purchase</p>
+              <p class="text-[#03071280]">use by January 2024</p>
+            </div>
+            <div class="relative divider divider-horizontal left-[22px]"></div>
+            <div class="flex flex-col">
+              <h3 class="text-3xl font-bold text-[#030712]">Couple 20</h3>
+              <p class="text-[#03071266] font-medium">Coupon Code</p>
+            </div>
+            <div class="absolute">
+              <div class="absolute bg-white w-[50px] h-[50px] rounded-full translate-x-[550%] bottom-[70px]"></div>
+              <div class="absolute bg-white w-[50px] h-[50px] rounded-full translate-x-[550%] top-[70px]"></div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="flex justify-center mt-10">
+          <button
+            class="btn secondary_bg primary_color border-[#1DD100] hover:bg-[#1DD1003d] hover:border-[#1DD100]">See All
+            Offers</button>
+        </div>
+      </div>
+
+    </div>
+
+    <section id="buy_ticket" >
+      <div class="bg-[#F7F8F8] h-[500px] rounded-t-[100px]">
+
+      </div>
+    </section>
+  </main>
+
+  
+  <!-- === FOOTER === -->
+  <footer>
+
+  </footer>
+
 
   <script src="js/main.js"></script>
   <script src="js/utility.js"></script>
